@@ -10,5 +10,5 @@ print('\n')
 import pandas as pd
 dataset = pd.read_csv('titanic_all.csv')
 #cetak data
-dataset.head()
+dataset.head();
 
