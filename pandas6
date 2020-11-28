@@ -1,0 +1,15 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+print('\n') 
+print ('    PROGRAM MAGISTER TEKNIK TERAPAN KOMPUTER')  
+print('             POLITEKNIK CALTEX RIAU')
+print ('                  PEKANBARU')
+print(' credits  code : https://github.com/muzammi06/caltex1')
+print('Abdullah Al Muzammi - email : abdullah20s2tk@mahasiswa.pcr.ac.id')
+print('     site : abdullah20s2tk.wordpress.com')
+print('----------------------------------------------------------------------')
+string = "Menampilkan grafik dengan matplotlib, dengan histogram, Pada Data Titanic.CSV"
+new_string = string.center(40)
+print('-', new_string, "-")
+dataset.Age.plot(kind = 'hist',bins = 50,figsize = (10,10))
+plt.show()
