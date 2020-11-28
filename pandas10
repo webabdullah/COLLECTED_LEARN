@@ -1,0 +1,16 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+print('\n') 
+print ('    PROGRAM MAGISTER TEKNIK TERAPAN KOMPUTER')  
+print('             POLITEKNIK CALTEX RIAU')
+print ('                  PEKANBARU')
+print(' credits  code : https://github.com/muzammi06/caltex1')
+print('Abdullah Al Muzammi - email : abdullah20s2tk@mahasiswa.pcr.ac.id')
+print('     site : abdullah20s2tk.wordpress.com')
+print('----------------------------------------------------------------------')
+string = "Filtering / Menyaring berdasarkan usia (Age) diatas 70 tahun "
+new_string = string.center(40)
+print('-', new_string, "-")
+
+x = dataset['Age'] >70
+dataset[x]
