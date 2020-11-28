@@ -1,0 +1,17 @@
+print('\n') 
+print ('    PROGRAM MAGISTER TEKNIK TERAPAN KOMPUTER')  
+print('             POLITEKNIK CALTEX RIAU')
+print ('                  PEKANBARU')
+print(' credits  code : https://github.com/muzammi06/caltex1')
+print('Abdullah Al Muzammi - email : abdullah20s2tk@mahasiswa.pcr.ac.id')
+print('     site : abdullah20s2tk.wordpress.com')
+print('----------------------------------------------------------------------')
+string = "Mengetahui Kolom Dan Barsi Pada Data Titanic.CSV"
+new_string = string.center(40)
+print('----------', new_string, "----------")
+
+import pandas as pd
+dataset = pd.read_csv('titanic_all.csv')
+rows, cols = dataset.shape
+print('Jumlah Baris :', rows)
+print('Jumlah Kolom :', cols)
