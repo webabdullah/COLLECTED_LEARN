@@ -13,4 +13,4 @@ print('--------------', new_string, "--------------")
 import pandas as pd
 dataset = pd.read_csv('titanic_all.csv')
 #cetak data
-print(dataset)
+print(dataset);
