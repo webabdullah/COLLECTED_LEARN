@@ -1,0 +1,18 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+print('\n') 
+print ('    PROGRAM MAGISTER TEKNIK TERAPAN KOMPUTER')  
+print('             POLITEKNIK CALTEX RIAU')
+print ('                  PEKANBARU')
+print(' credits  code : https://github.com/muzammi06/caltex1')
+print('Abdullah Al Muzammi - email : abdullah20s2tk@mahasiswa.pcr.ac.id')
+print('     site : abdullah20s2tk.wordpress.com')
+print('----------------------------------------------------------------------')
+string = "Menampilkan missing value dengan mean, Pada Data Titanic.CSV"
+new_string = string.center(40)
+print('-', new_string, "-")
+
+pd.set_option('display.max_rows', None)
+data = dataset.loc[:,['Age','Fare']]
+data['Age'] = data['Age'].fillna(dataset.groupby('Survived')['Age'].transform('mean'))
+print(data)
